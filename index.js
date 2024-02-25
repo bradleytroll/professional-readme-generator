@@ -36,7 +36,9 @@ ${answers.tests}
 
 ## Questions
 For any questions, please contact me at [${answers.email}](mailto:${answers.email}).
-GitHub: [${answers.github}](https://github.com/${answers.github})`;  
+GitHub: [${answers.github}](https://github.com/${answers.github})
+
+This README.md file was created using the generator in this application.`;  
 }
 
 // TODO: Create an array of questions for user input
