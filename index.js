@@ -4,21 +4,20 @@ const fs = require('fs');
 
 // Creates function to generate the README content.
 const generateReadmeContent = (answers) => {
-    return `
-    # ${answers.name}
+    return `# ${answers.name}
 
     ## Description
     ${answers.description}
 
     ## Table of Contents
-    = [Installation](#installation)
-    = [Usage](#usage)
-    = [License](#license)
-    = [Contributing](#contributing)
-    = [Tests](#tests)
-    = [Questions](#questions)
+    - [Installation](#installation) 
+    - [Usage](#usage)
+    - [License](#license)
+    - [Contributing](#contributing)
+    - [Tests](#tests)
+    - [Questions](#questions)
 
-     ## Installation
+    ## Installation
     ${answers.installation}
 
     ## Usage
@@ -68,7 +67,7 @@ const promptUser = () => {
         {
             type: 'list',
             name: 'license',
-            message: 'Choose a license ofor your application.',
+            message: 'Choose a license for your application.',
             choices: ['MIT', 'Apache 2.0', 'GPL v3', 'BSD 3-Clause', 'None'],
         },
         {
@@ -105,8 +104,8 @@ function writeToFile(fileName, data) {
 // TODO: Create a function to initialize app
 function init() {
     promptUser()
-        .then ((answers) => writeToFile('README.md', generateReadmeContent(answers)))
-        .then ((error) => console.log(error));
+        .then((answers) => writeToFile('README.md', generateReadmeContent(answers)))
+        .catch((error) => console.log(error));
 }
 
 // Function call to initialize app
