@@ -1,6 +1,6 @@
 // TODO: Include packages needed for this application
-const inquirer = require('inquirer')
-
+const inquirer = require('inquirer');
+const fs = require('fs');
 
 // TODO: Create an array of questions for user input
 // original code: const questions = [];
@@ -36,7 +36,13 @@ const promptUser = () => {
             name: 'license',
             message: 'Include your license information or put None.',
         },
-    ]);
+    ])
+    .then((answers) => {
+        const htmlPageContent = generateHTML(answers);
+        fs.writeFile('index.html', htmlPageContent, (err) =>
+        err ? console.log(err) : console.log('Successfully created index.html!')
+        );
+    });
 };
 
 
