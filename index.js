@@ -35,10 +35,8 @@ const generateReadmeContent = (answers) => {
     ${answers.tests}
 
     ## Questions
-    ${answers.questions}
-
-
-
+    For any questions, please contact me at [${answers.email}](mailto:${answers.email}).
+    GitHub: [${answers.github}](https://github.com/${answers.github})
 
     `
 }
@@ -85,9 +83,14 @@ const promptUser = () => {
         },
         {
             type: 'input',
-            name: 'questions',
-            message: 'List any contributing collaborators on this project as well as their GitHub profile',
+            name: 'email',
+            message: 'Enter your email address.',
         },
+        {
+            type: 'input',
+            name: 'github',
+            message: 'Enter your GitHub username.'
+        }
     ])
 };
 
