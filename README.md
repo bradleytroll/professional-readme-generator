@@ -1,7 +1,7 @@
-# test7
+# test8
 
 ## Description
-dir7
+sdf
 
 # Table of Contents
 - [Installation](#installation)
@@ -12,21 +12,21 @@ dir7
 - [Questions](#questions)
 
 ## Installation
-asdf
+sdf
 
 ## Usage
-ase
+sdf
 
 ## License
-![License Badge](https://img.shields.io/badge/license-GPL%20v3-blue.svg)
-This project is covered under the GPL v3 license.
+![License Badge](https://img.shields.io/badge/license-MIT-blue.svg)
+This project is covered under the MIT license.
 
 ## Contributing
-asdf
+sdf
 
 ## Tests
-asdf
+sdf
 
 ## Questions
-For any questions, please contact me at [asdf](mailto:asdf).
-GitHub: [asdf](https://github.com/asdf)
+For any questions, please contact me at [sdf](mailto:sdf).
+GitHub: [sdf](https://github.com/sdf)
