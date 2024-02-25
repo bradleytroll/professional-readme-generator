@@ -1,8 +1,8 @@
-// TODO: Include packages needed for this application
+// Includes packages needed for this application
 const inquirer = require('inquirer');
 const fs = require('fs');
 
-// Creates function to generate the README content.
+// Creates function to generate the README content, using a template literal. 
 const generateReadmeContent = (answers) => {
     return `# ${answers.name}
 ![License Badge](https://img.shields.io/badge/license-${encodeURIComponent(answers.license)}-blue.svg)
@@ -41,8 +41,7 @@ GitHub: [${answers.github}](https://github.com/${answers.github})
 This README.md file was created using the generator in this application.`;  
 }
 
-// TODO: Create an array of questions for user input
-// original code: const questions = [];
+// Creates an array of questions for user input, assigned to a function called promptUser.
 const promptUser = () => {
     return inquirer.prompt([
         {
@@ -95,14 +94,14 @@ const promptUser = () => {
 };
 
 
-// TODO: Create a function to write README file
+// Creates a function to write README.md file, which is confirmed in the terminal, or return an error message.
 function writeToFile(fileName, data) {
     fs.writeFile(fileName, data, (err) =>
     err ? console.log(err) : console.log('Successfully created README.md!')
     );
 }
 
-// TODO: Create a function to initialize app
+// Creates a function to initialize app or return an error.
 function init() {
     promptUser()
         .then((answers) => writeToFile('README.md', generateReadmeContent(answers)))
