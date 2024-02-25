@@ -1,8 +1,8 @@
 
-    # test2
+    # test3
 
     ## Description
-    description2
+    des3
 
     ## Table of Contents
     = [Installation](#installation)
@@ -13,23 +13,23 @@
     = [Questions](#questions)
 
      ## Installation
-    directions2
+    dir3
 
     ## Usage
-    instructions2
+    inst3
 
     ## License
-    ![License Badge](https://img.shields.io/badge/license-None-blue.svg)
-    This project is covered under the None license.
+    ![License Badge](https://img.shields.io/badge/license-MIT-blue.svg)
+    This project is covered under the MIT license.
 
     ## Contributing
-    none
+     cnone
 
     ## Tests
     none
 
     ## Questions
-    none
+     none
 
 
 
