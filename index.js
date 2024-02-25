@@ -52,7 +52,7 @@ const promptUser = () => {
         {
             type: 'input',
             name: 'description',
-            message: 'Please describe your project, explaining the what, hwy, and how of your project',
+            message: 'Please describe your project, explaining the what, why, and how of your project',
         },
         {
             type: 'input',
@@ -104,7 +104,7 @@ function writeToFile(fileName, data) {
 // Creates a function to initialize app or return an error.
 function init() {
     promptUser()
-        .then((answers) => writeToFile('README.md', generateReadmeContent(answers)))
+        .then((answers) => writeToFile('generatedREADME.md', generateReadmeContent(answers)))
         .catch((error) => console.log(error));
 }
 
