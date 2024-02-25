@@ -5,6 +5,7 @@ const fs = require('fs');
 // Creates function to generate the README content.
 const generateReadmeContent = (answers) => {
     return `# ${answers.name}
+![License Badge](https://img.shields.io/badge/license-${encodeURIComponent(answers.license)}-blue.svg)
 
 ## Description
 ${answers.description}
@@ -24,7 +25,7 @@ ${answers.installation}
 ${answers.usage}
 
 ## License
-![License Badge](https://img.shields.io/badge/license-${encodeURIComponent(answers.license)}-blue.svg)
+
 This project is covered under the ${answers.license} license.
 
 ## Contributing
