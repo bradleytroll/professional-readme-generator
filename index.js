@@ -72,12 +72,12 @@ const promptUser = () => {
         {
             type: 'input',
             name: 'contributing',
-            message: 'List any contributing collaborators on this project as well as their GitHub profile',
+            message: 'Type directions for users should they wish to contribute.',
         },
         {
             type: 'input',
             name: 'tests',
-            message: 'List any tests here.',
+            message: 'Type directions for running tests.',
         },
         {
             type: 'input',

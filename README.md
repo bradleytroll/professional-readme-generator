@@ -1,8 +1,8 @@
-# nest9
-![License Badge](https://img.shields.io/badge/license-GPL%20v3-blue.svg)
+# README Generator
+![License Badge](https://img.shields.io/badge/license-MIT-blue.svg)
 
 ## Description
-asdf
+This README generator is a command-line application that dynamically generates a professional README.md file from a user's input using the Inquirer package. The purpose of this project is to make it easy for developers to generate a README.md file for their projects, including the usual sections generally included in a README.
 
 # Table of Contents
 - [Installation](#installation)
@@ -13,21 +13,21 @@ asdf
 - [Questions](#questions)
 
 ## Installation
-lkj;j
+To install, type the following in your terminal: npm i
 
 ## Usage
-asdfasd
+After installing the application, run it using the following command: node index.js
 
 ## License
 
-This project is covered under the GPL v3 license.
+This project is covered under the MIT license.
 
 ## Contributing
-adsfasdf
+If you would like to contribute, pelease sumbmit a pull request or contact me directly. 
 
 ## Tests
-asdfds
+To run tests on the application, install and run the following: npm run test
 
 ## Questions
-For any questions, please contact me at [ads;lfj@aaa.com](mailto:ads;lfj@aaa.com).
-GitHub: [adsfsd](https://github.com/adsfsd)
+For any questions, please contact me at [bradleytroll@gmail.com](mailto:bradleytroll@gmail.com).
+GitHub: [bradleytroll](https://github.com/bradleytroll)
