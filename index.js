@@ -6,39 +6,36 @@ const fs = require('fs');
 const generateReadmeContent = (answers) => {
     return `# ${answers.name}
 
-    ## Description
-    ${answers.description}
-    
-    ## Table of Contents
-    - [Installation](#installation)
-    - [Usage](#usage)
-    - [License](#license)
-    - [Contributing](#contributing)
-    - [Tests](#tests)
-    - [Questions](#questions)
-    
-    ## Installation
-    \`\`\`
-    ${answers.installation}
-    \`\`\`
-    
-    ## Usage
-    ${answers.usage}
-    
-    ## License
-    ![License Badge](https://img.shields.io/badge/license-${encodeURIComponent(answers.license)}-blue.svg)
-    This project is covered under the ${answers.license} license.
-    
-    ## Contributing
-    ${answers.contributing}
-    
-    ## Tests
-    ${answers.tests}
-    
-    ## Questions
-    For any questions, please contact me at [${answers.email}](mailto:${answers.email}).
-    GitHub: [${answers.github}](https://github.com/${answers.github})
-    `;  
+## Description
+${answers.description}
+
+# Table of Contents
+- [Installation](#installation)
+- [Usage](#usage)
+- [License](#license)
+- [Contributing](#contributing)
+- [Tests](#tests)
+- [Questions](#questions)
+
+## Installation
+${answers.installation}
+
+## Usage
+${answers.usage}
+
+## License
+![License Badge](https://img.shields.io/badge/license-${encodeURIComponent(answers.license)}-blue.svg)
+This project is covered under the ${answers.license} license.
+
+## Contributing
+${answers.contributing}
+
+## Tests
+${answers.tests}
+
+## Questions
+For any questions, please contact me at [${answers.email}](mailto:${answers.email}).
+GitHub: [${answers.github}](https://github.com/${answers.github})`;  
 }
 
 // TODO: Create an array of questions for user input
