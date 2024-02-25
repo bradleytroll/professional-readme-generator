@@ -18,8 +18,11 @@ To install, type the following in your terminal: npm i
 ## Usage
 After installing the application, run it using the following command: node index.js
 
-## License
+<img src="./Assets/SShot1.png" alt="Empty Schedule" width="300" />
 
+<img src="./Assets/SShot2.png" alt="Empty Schedule" width="300" />
+
+## License
 This project is covered under the MIT license.
 
 ## Contributing
@@ -32,4 +35,4 @@ To run tests on the application, install and run the following: npm run test
 For any questions, please contact me at [bradleytroll@gmail.com](mailto:bradleytroll@gmail.com).
 GitHub: [bradleytroll](https://github.com/bradleytroll)
 
-This README.md file was created using the generator in this application.
+This README.md file was created in part using the generator in this application.
