@@ -10,18 +10,32 @@ const generateReadmeContent = (answers) => {
     ## Description
     ${answers.description}
 
-    ## Installation
+    ## Table of Contents
+    = [Installation](#installation)
+    = [Usage](#usage)
+    = [License](#license)
+    = [Contributing](#contributing)
+    = [Tests](#tests)
+    = [Questions](#questions)
+
+     ## Installation
     ${answers.installation}
 
     ## Usage
     ${answers.usage}
 
-    ## Credits
-    ${answers.credits}
-
     ## License
-    ${answers.license}
+    ![License Badge](https://img.shields.io/badge/license-${encodeURIComponent(answers.license)}-blue.svg)
+    This project is covered under the ${answers.license} license.
 
+    ## Contributing
+    ${answers.contributing}
+
+    ## Tests
+    ${answers.tests}
+
+    ## Questions
+    ${answers.questions}
 
 
 
@@ -54,14 +68,25 @@ const promptUser = () => {
             message: 'Type the instructions for using your application',
         },
         {
-            type: 'input',
-            name: 'credits',
-            message: 'List any collaborators on this project as well as their GitHub profile',
+            type: 'list',
+            name: 'license',
+            message: 'Choose a license ofor your application.',
+            choices: ['MIT', 'Apache 2.0', 'GPL v3', 'BSD 3-Clause', 'None'],
         },
         {
             type: 'input',
-            name: 'license',
-            message: 'Include your license information or put None.',
+            name: 'contributing',
+            message: 'List any contributing collaborators on this project as well as their GitHub profile',
+        },
+        {
+            type: 'input',
+            name: 'tests',
+            message: 'List any tests here.',
+        },
+        {
+            type: 'input',
+            name: 'questions',
+            message: 'List any contributing collaborators on this project as well as their GitHub profile',
         },
     ])
 };
