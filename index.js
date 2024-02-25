@@ -2,6 +2,33 @@
 const inquirer = require('inquirer');
 const fs = require('fs');
 
+// Creates function to generate the README content.
+const generateReadmeContent = (answers) => {
+    return `
+    # ${answers.name}
+
+    ## Description
+    ${answers.description}
+
+    ## Installation
+    ${answers.installation}
+
+    ## Usage
+    ${answers.usage}
+
+    ## Credits
+    ${answers.credits}
+
+    ## License
+    ${answers.license}
+
+
+
+
+
+    `
+}
+
 // TODO: Create an array of questions for user input
 // original code: const questions = [];
 const promptUser = () => {
@@ -23,7 +50,7 @@ const promptUser = () => {
         },
         {
             type: 'input',
-            name: 'uage',
+            name: 'usage',
             message: 'Type the instructions for using your application',
         },
         {
@@ -37,20 +64,22 @@ const promptUser = () => {
             message: 'Include your license information or put None.',
         },
     ])
-    .then((answers) => {
-        const htmlPageContent = generateHTML(answers);
-        fs.writeFile('index.html', htmlPageContent, (err) =>
-        err ? console.log(err) : console.log('Successfully created index.html!')
-        );
-    });
 };
 
 
 // TODO: Create a function to write README file
-function writeToFile(fileName, data) {}
+function writeToFile(fileName, data) {
+    fs.writeFile(fileName, data, (err) =>
+    err ? console.log(err) : console.log('Successfully created README.md!')
+    );
+}
 
 // TODO: Create a function to initialize app
-function init() {}
+function init() {
+    promptUser()
+        .then ((answers) => writeToFile('README.md', generateReadmeContent(answers)))
+        .then ((error) => console.log(error));
+}
 
 // Function call to initialize app
 init();
